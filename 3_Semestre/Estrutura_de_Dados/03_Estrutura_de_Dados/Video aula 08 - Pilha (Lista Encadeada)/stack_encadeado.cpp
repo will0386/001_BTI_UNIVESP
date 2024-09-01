@@ -1,5 +1,5 @@
 #include "stack.h"
-#include <cstdef>			//Para funcionar o NULL
+#include <cstddef>			//Para funcionar o NULL
 #include <new>				//Para incluir na memoria
 #include <iostream>
 using namespace std;
@@ -55,7 +55,7 @@ ItemType Stack::pop() {
 	if (!isEmpty()) {
 		NodeType* tempPtr;									//é usado uma ideia parecida com o destrutor por isso foi criado "tempPtr"
 		tempPtr = structure;								//e mais ou menos a mesma logica do "push", só que deletando o "item"
-		ItemType item = strcture->info;
+		ItemType item = structure->info;
 		structure = structure->next;
 		delete tempPtr;
 		return item;

@@ -1,3 +1,5 @@
+#ifndef STACK_H
+#define STACK_H
 #include "node_type.h"
 
 class Stack {
@@ -13,3 +15,5 @@ class Stack {
 		void push(ItemType);
 		ItemType pop();
 };
+
+#endif
