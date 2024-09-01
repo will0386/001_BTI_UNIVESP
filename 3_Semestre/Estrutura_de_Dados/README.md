@@ -36,4 +36,4 @@ ou
 ```
 $ g++ *.cpp
 ```
-		(para ser criado o arquivo a.out)
+> para ser criado o arquivo a.out
