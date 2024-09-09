@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /home/willcr/Educação/001_BTI_UNIVESP/3_Semestre/Formalção_Profissional_em_Computação/05_Formalção_Profissional_em_Computação/myenv/bin/python3 "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
